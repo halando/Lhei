@@ -70,3 +70,6 @@ class UsersController extends Controller
         }
     }
 }
+/* Fullstack Application with JWT authetincation using Laravel and
+Angular 
+Szerző: Learning Points*/
