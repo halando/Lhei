@@ -16,11 +16,11 @@ class t extends JsonResource
     {
         
         return [
-            "id"=>$this->id,
-            "drink"=>$this->drink,
-            "amount"=>$this->amount,
-            "type"=>$this->type->type,
-            "package"=>$this->package->package,
+            "username"=>$this->username,
+            "fullname"=>$this->fullname,
+            "email"=>$this->email,
+            "tagsbegin"=>$this->tagsbegin,
+            "permission"=>$this->permission
         ];
     }
 }

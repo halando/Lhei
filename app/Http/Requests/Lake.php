@@ -22,20 +22,21 @@ class Users extends FormRequest
     public function rules(): array
     {
         return [
-            "drink"=>"required",
-            "amount"=>"required|numeric",
-            "type"=>"required",
-            "package"=>"required"
+            "username "=>"required",
+            "fullname"=>"required|numeric",
+            "email"=>"required",
+            "tagsbegin"=>"required",
+            "permission"=>"required"
         ];
     }
     
     public function messages(){
         return [
-            "drink.required"=>"Drink kitöltése kötelező",
-            "amount.required"=>"Amount kötelező",
-            "amount.numeric"=>"Amount szám típúsú kell legyen",
-            "type.required"=>"Type kitöltése kötelező",
-            "package.required"=>"Package kitöltése kötelező",
+            "username.required"=>"Username kitöltése kötelező",
+            "fullname.required"=>"Fullname kötelező",
+            "email.required"=>"Email cím megadása kötelező",
+            "tagsbegin.required"=>"Tagsbegin kitöltése kötelező",
+            "permission.required"=>"Permission kitöltése kötelező",
         ];
     }
 
